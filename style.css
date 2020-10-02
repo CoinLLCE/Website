@@ -1,0 +1,154 @@
+body {
+    background: white;
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* HEADER */
+  p{
+      color: rgb(6, 63, 150);
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+  h1{
+    color:rgba(8, 72, 168, 0.945);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+  header {
+    background-color: rgb(6, 63, 150);
+    background-size: 100%;
+    background-position: center;
+    height: 110px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+  header .logo a {
+    background-image: url( "/images/coin.png");
+    background-size: 75px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    text-indent: -9999999px;
+    top: -30px;
+    width: 100px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+
+  /* FEATURES */
+  h3{
+    color:rgba(8, 72, 168, 0.945);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+  .features { /*align pics next to each other*/
+    background: white;
+    color:  rgb(6, 63, 150);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .features figure { /* align them in center of page*/
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+  }
+  
+  .features figure img {  /*make them a nice circle*/
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: rgb(6, 63, 150) 0 0 10px;
+    width: 200px;
+  }
+  .ourimage { /*make them equal circles*/
+    display: inline-block;
+    margin-left: 5px;
+    height: 200px;
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid rgb(6, 63, 150);
+  }
+
+
+  /*features product*/
+  .square{
+    height: 500px;
+  }
+  .square {
+ 
+    text-align: left;
+    text-transform: uppercase;
+    width: 600px;
+  }
+  
+  /* FOOTER */
+  
+  footer {
+    background: rgb(6, 63, 150);
+    color: white;
+    font-size: 14px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(6, 63, 150);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
